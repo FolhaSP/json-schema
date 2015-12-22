@@ -21,7 +21,10 @@ use JsonSchema\Constraints\Constraint;
  */
 class Validator extends Constraint
 {
-    const SCHEMA_MEDIA_TYPE = 'application/schema+json';
+    /**
+     * @see http://stackoverflow.com/a/28584362
+     */
+    const SCHEMA_MEDIA_TYPE = 'application/json';
 
     /**
      * Validates the given data against the schema and returns an object containing the results
